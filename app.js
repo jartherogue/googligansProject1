@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // initializing firebase
 var config = {
     apiKey: "AIzaSyA571n6TcSLjPftXjBI9zGxCXRkCtVMpeM",
@@ -64,3 +65,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     "</tr>");
 $('#currentEmployees').append(newRow);
   });
+=======
+$('#submitButton').on('click', function () {
+    newRow = ("<tr>" + "<td>Name</td>" + "<td>role</td>" + "<td>Start Date</td>" + "<td>Months Worked</td>" + "<td>Monthly Rate</td>" + "<td>Total Billed</td>" + "</tr>");
+    $('#currentEmployees').append(newRow);
+});
+>>>>>>> 1201c2b49391f35b03960505423ecd44576e14bd
